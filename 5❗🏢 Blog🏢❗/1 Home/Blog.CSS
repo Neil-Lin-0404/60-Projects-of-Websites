@@ -1,0 +1,72 @@
+/* TOP+NAVIGATOR------------------------------------TOP+NAVIGATOR------------------------------------TOP+NAVIGAOTR */
+.top {
+    background-color: white;
+    border: 2px solid black;
+    width: 100%;
+    margin: 0;
+    height:10vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5px;
+}
+.top h1 {
+    position: absolute;
+    left: 100px;
+    color:black;
+    font-size: 50px;
+}
+.top p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 4px;
+    width: 100%;
+    height:100%;
+}
+
+.navigator select {
+    width:250px;
+    background: rgba(145, 145, 145, 0.219);
+    color:black;
+    position: absolute;
+    right:2px;
+    height:10vh;
+    top:10px;
+    border: 2px solid black;
+    border-radius: 3px;
+    font-size: 30px;
+    cursor:pointer;
+}
+select:focus {
+    background-color: black;
+    color:white;
+}
+/* CONTENT------------------------------------CONTENT------------------------------------CONTENT */
+.content {
+    height:90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    text-align: center;
+}
+.content div {
+    width: 800px;
+    height:30vh;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+/* To Blog Button------------------------------------To Blog Button------------------------------------To Blog Button */
+.navtoblogs {
+    width:100%;
+    height:10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+.navtoblogs button {
+    width:100%
+}

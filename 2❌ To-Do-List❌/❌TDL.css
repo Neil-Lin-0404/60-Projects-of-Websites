@@ -1,0 +1,74 @@
+/* ❌When the Li is class : done , the check mark is at the wrong position  有點偏離 */
+
+body {
+    background: linear-gradient(90deg, #6539df, #9d4ad4);
+}
+.container {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width:100%;
+    padding: 20px;
+}
+#input {
+    width: 20%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+#add {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #0400d6;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width:15%;
+}
+li {
+    list-style: none;
+    padding: 10px;
+    margin: 5px 0;
+    background: #f1f1f1;
+    border-radius: 5px;
+    width:30vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+li::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #ccc; /* Default color */
+}
+
+li.done::before {
+    content: '✔'; /* Replacing the circle with a checkmark */
+    width: 15px; /* Remove the fixed width and height since we're using a character */
+    height: 15px;
+    border: none; /* Remove the border */
+    margin-right: 10px;
+    color: green; /* Make the checkmark green */
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+ul li span {
+    width: auto;
+    height:auto;
+    right:33vw;
+    font-size: 40px;
+    position: absolute;
+    color :red;
+}

@@ -1,0 +1,43 @@
+<!-- 部落格（英語：blog）是一種線上日記型式的個人網站，藉由張貼文章、圖片或影片來記錄生活、抒發情感或分享資訊 -->
+<!-- 計畫 : 把每天學的編程用到這而非discord -->
+<!-- 學道後端之後 到這裡替代原始段落 -->
+ <!-- LEARN : windlow.location.assign(this.value) on select -> option -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="Blog.CSS" />
+  </head>
+  <body>
+    <div class="top">
+      <h1>My Blog</h1>
+      <p>
+        The Third Version (3.0).<br />First And Second Version were abandoned
+      </p><p>Home Page</p>
+      <nav class="navigator">
+        <select onchange="window.location.assign(this.value);">
+          <option value="">Select</option>
+          <option value="../1 Home/BlogH.htm">Home</option>
+          <option value="../2 About/BlogA.htm">About</option>
+          <option value="../3 My Blog/BlogMB.htm">My Blog</option>
+          <option value="../4 Contact/BlogC.htm">Contact</option>
+        </select>
+      </nav>
+    </div>
+    <div class="content">
+      <div>PlaceHolder</div>
+      <div>PlaceHolder</div>
+      <div>PlaceHolder</div>
+    </div>
+    <div class="navtoblogs">
+      <a href="../3 My Blog/BlogMB.htm" id="allblogs">
+        <button id="blogbutton">
+          <h2 id="h2blog">View All Blogs</h2>
+        </button>
+      </a>
+    </div>
+    <script src="Blog.JS"></script>
+  </body>
+</html>
